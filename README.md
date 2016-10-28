@@ -27,6 +27,10 @@ cd indexing_api
 bundle
 rake db:setup
 ```
+### Run specs
+```sh
+bundle exec rspec spec
+```
 
 ## How to consume the api
 
@@ -42,6 +46,8 @@ Make sure the url param is well encoded. You can use `CGI::escape(url)` if you'r
 ```sh
 curl -X GET  "http://localhost:3000/pages"
 ```
+
+
 
 
 
